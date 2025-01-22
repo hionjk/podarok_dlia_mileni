@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Great+Vibes&family=Pacifico&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px;
+  color: rgb(255, 255, 255);
+  width: 100vw;
+  align-items: center;
+}
+
+.header__nav a {
+  color: white !important;
+  text-decoration: none;
+  font-size: 1.25em;
+  padding: 18px;
+}
+
+.header__happy {
+  font-size: 2em;
+	color: white;
+	text-decoration: none;
+  font-family: 'Great Vibes';
+}
+
+.burger__nav {
+	position: fixed;
+	background-color: rgb(55, 133, 184);
+	width: 100%;
+	transform: translateY(0);
+	height: 50px;
+	display: flex;
+	z-index: 5;
+	justify-content: center;
+	align-items: center;
+	transition: all 250ms;
+}
+.burger__nav--disabled {
+	transform: translateY(-100%);
+}
+.burger__nav a {
+	font-size: 1.5rem;
+	padding: 10px 20px;
+	color: rgb(255, 255, 255);
+}
+.burger__nav button {
+	font-size: 1.5rem;
+	padding: 15px;
+	left: 0;
+	top: 0;
+	background: none;
+	border: none;
+	color: white;
+	position: absolute;
+}
+
+.burger__button {
+  background: none;
+  border: none;
+  display: none;
+}
+.burger__button img {
+  width: 48px;
+}
+
+.header__gift {
+  border-radius: 26px;
+  text-decoration: none;
+  padding: 8px 14px;
+  border: none;
+  background: rgba(255, 255, 255, 0.501);
+  font-size: 1.5em;
+
+  transition: background-color 250ms;
+}
+
+.header__button:hover {
+  background: white;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.particle {
+  position: fixed;
+  animation: falling 10s ease-in-out forwards;
+  transition: all 250ms;
+
+  /* for clicking */
+  box-sizing: content-box;
+  padding: 20px;
+}
+
+@keyframes falling {
+  0% {
+    top: -64px;
+    rotate: 0;
+  }
+
+	50% {
+		opacity: 1;
+	}
+
+	95% {
+		opacity: 0; 
+	}
+  100% {
+    top: 50%; 
+    rotate: 360deg;
+    
+  }
+}
+
+.particle--clicked {
+  transform: scale();
+}
+
+@media (max-width: 420px) {
+  .header__nav {
+    display: none;
+  }
+
+  .burger__button {
+    display: block;
+    font-size: 1.8em;
+  }
+
+  :root {
+    font-size: 11px;
+  }
+}

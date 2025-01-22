@@ -1,0 +1,53 @@
+.promo {
+  min-height: 100vh;
+  background-image: url('../images/main_bg.jpg');
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  padding-top: 200px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  font-family: 'Great Vibes';
+  color: white;
+}
+
+.promo__title {
+  color: white;
+  font-size: 4em;
+  text-shadow: 1px 1px 2px white;
+  z-index: 2;
+  position: relative;
+}
+
+.promo__title span {
+  color: rgb(246, 93, 118);
+  text-shadow: 2px 2px 2px rgb(246, 93, 118);
+}
+
+.promo__subtitle {
+  margin-top: 40px;
+  font-family: 'Pacifico';
+  color: white;
+  max-width: 78vw;
+  z-index: 2;
+  position: relative;
+}
+.promo__withlove {
+  margin-top: 18px;
+  z-index: 2;
+  position: relative;
+  font-size: 1.5em;
+}
+.promo__withlove span {
+  color: rgb(246, 93, 118);
+}
+
+@media (max-width: 420px) {
+  .promo {
+    text-align: center;
+    background-position: 40%;
+    padding-top: 120px;
+  }
+}
