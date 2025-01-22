@@ -3,7 +3,7 @@ const max_animation_time = 8;
 
 const particlesData = [
   {
-    path: 'https://github.com/hionjk/podarok_dlia_mileni/blob/main/images/snowflake-6.png',
+    path: 'https://github.com/hionjk/podarok_dlia_mileni/blob/main/images/snowflake-6.png?raw=true',
     minWidth: 24,
     maxWidth: 32,
   },
